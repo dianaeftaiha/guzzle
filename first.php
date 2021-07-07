@@ -7,5 +7,8 @@ $client = new Client();
 
 $response=$client->request(
     'GET',
-    'https://jsonplaceholder.typicode.com/'
+    'https://jsonplaceholder.typicode.com/posts/1'
 );
+
+var_dump($response);
+echo $response->getBody();
